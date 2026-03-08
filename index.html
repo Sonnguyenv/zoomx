@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera ZoomX Pro | Professional Photography</title>
+    
+    <meta name="apple-itunes-app" content="app-id=6752850286">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Primary Colors from your palette */
+            --primary-1000: #99ff7a; /* Neon Green */
+            --primary-700: #b5ff9b;
+            --primary-color: var(--primary-1000);
+            
+            /* Dark scale from your palette */
+            --dark-1000: #1a1a1a;
+            --dark-900: #262626;
+            --dark-800: #333333;
+            --text-main: #ffffff;
+            --text-sub: #b3b3b3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-1000);
+            color: var(--text-main);
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://vixtorhoang.github.io/assets/large_banner.jpg?auto=format&fit=crop&q=80&w=1600') center/cover;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .hero-content h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            letter-spacing: -2px;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            color: var(--primary-700);
+            margin-bottom: 30px;
+        }
+
+        /* App Store Button Style */
+        .app-store-btn {
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+
+        .app-store-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .app-store-btn img {
+            height: 60px; /* Standard height for App Store Badge */
+            width: auto;
+        }
+
+        /* Introduction Section */
+        .intro {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .intro-img img {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 0 40px rgba(153, 255, 122, 0.15);
+            border: 1px solid var(--dark-800);
+        }
+
+        .intro-text h2 {
+            font-size: 2.8rem;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+        }
+
+        .intro-text p {
+            font-size: 1.15rem;
+            color: var(--text-sub);
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: var(--dark-900);
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 60px auto 0;
+        }
+
+        .feature-card {
+            background: var(--dark-800);
+            padding: 45px;
+            border-radius: 20px;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-10px);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        footer {
+            padding: 60px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--dark-900);
+        }
+
+        @media (max-width: 768px) {
+            .intro { grid-template-columns: 1fr; text-align: center; }
+            .hero-content h1 { font-size: 3rem; }
+            .app-store-btn img { height: 50px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>CAMERA ZOOMX PRO</h1>
+            <p>Expand your vision, capture every hidden detail.</p>
+            
+            <a href="https://vixtorhoang.github.io" class="app-store-btn">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000&h=7e7b68fad3d018ee560adcde18c402d5" alt="Download on the App Store">
+            </a>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="intro-img" data-aos="fade-right">
+            <img src="https://vixtorhoang.github.io/assets/small_banner.jpg?auto=format&fit=crop&q=80&w=1000" alt="Camera Zoom in Action">
+        </div>
+        <div class="intro-text" data-aos="fade-left">
+            <h2>Next-Gen iPhone Optics</h2>
+            <p>Powered by advanced neural processing, Camera Zoom Pro delivers up to 1000x magnification with stunning clarity. Designed for those who demand more from their iPhone camera.</p>
+            
+            <a href="https://apps.apple.com/us/app/id6752850286" class="app-store-btn">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000&h=7e7b68fad3d018ee560adcde18c402d5" alt="Download on the App Store">
+            </a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 data-aos="fade-up">Pro-Level Capabilities</h2>
+        <div class="feature-grid">
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                <h3>Neural Zoom</h3>
+                <p>AI-enhanced pixel reconstruction for sharper images at extreme distances.</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                <h3>Night Sight+</h3>
+                <p>Low-light sensor optimization for clear, noise-free night photography.</p>
+            </div>
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                <h3>Pro RAW</h3>
+                <p>Full uncompressed data capture for ultimate post-processing freedom.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Camera ZoomX Pro by HeroLabs. <br>
+        Download the future of mobile photography today.
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
